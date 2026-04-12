@@ -1,0 +1,131 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="415dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/loadingscreenpic"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/lightGrayishBlue">
+
+        <LinearLayout
+            android:id="@+id/titlePart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingVertical="10dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:fontFamily="@font/nimbus_san_regular"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:text="Mga Tuntunin at Kundisyon"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/scrollViewPart"
+            android:scrollbars="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp"
+            android:paddingBottom="10dp">
+
+            <ScrollView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical"
+                android:paddingVertical="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/firstMessage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/nimbus_san_regular"
+                        android:justificationMode="inter_word"
+                        android:textColor="@color/black"
+                        android:text="@string/firstParagraph"
+                        android:textSize="20sp" />
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/secondMessage"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        android:justificationMode="inter_word"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:textSize="20sp"-->
+<!--                        android:fontFamily="@font/nimbus_san_regular"-->
+<!--                        android:layout_marginTop="20dp"-->
+<!--                        android:text="@string/secondParagraph" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/finalMessage"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        android:justificationMode="inter_word"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:textSize="20sp"-->
+<!--                        android:fontFamily="@font/nimbus_san_regular"-->
+<!--                        android:layout_marginTop="20dp"-->
+<!--                        android:text="@string/finalParagraph" />-->
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/buttonsPart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/agreeButton"
+                android:layout_width="wrap_content"
+                android:layout_height="57dp"
+                android:layout_marginVertical="10dp"
+                android:textSize="17sp"
+                android:textColor="@color/lightGrayishBlue"
+                android:fontFamily="@font/nimbus_san_regular"
+                android:backgroundTint="@color/darkBlue"
+                android:text="Nauunawaan ko" />
+
+<!--            <Button-->
+<!--                android:id="@+id/disagreeButton"-->
+<!--                android:layout_width="130dp"-->
+<!--                android:layout_height="57dp"-->
+<!--                android:textSize="14sp"-->
+<!--                android:layout_marginStart="5dp"-->
+<!--                android:fontFamily="@font/nimbus_san_regular"-->
+<!--                android:textColor="@color/lightGrayishBlue"-->
+<!--                android:backgroundTint="@color/newDarkerBlue"-->
+<!--                android:text="Hindi ako sumasang-ayon" />-->
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

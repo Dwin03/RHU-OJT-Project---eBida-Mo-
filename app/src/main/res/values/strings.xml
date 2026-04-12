@@ -1,0 +1,16 @@
+<resources>
+
+    <string name="app_name">Tsismis App</string>
+
+    <string name="instruction">Punan ang mga kinakailangang impormasyon, i-review ang iyong sagot, at i-click ang &quot;<b>"Ipasa"</b>&quot; upang maitala at maipasa ang inyong report.</string>
+
+    <string name="thankYouMessage">Maraming salamat! Ang iyong form ay matagumpay na naipasa.</string>
+
+    <string name="firstParagraph">%1$s%1$s%1$s%1$sLahat ng datos ay mananatiling kumpidensyal at gagamitin lamang para sa pagbibigay ng serbisyong pangkalusugan. Walang personal na impormasyon na nakalap ang ibabahagi nang walang pahintulot. Ang lahat ng impormasyon na ilalagay ay protektado ng Republic Act 10173 o Data Privacy Act of 2012.</string>
+    <string name="secondParagraph">%1$s%1$s%1$s%1$s%1$sAng lahat ng impormasyong isinumite ay mahigpit na pinoprotektahan alinsunod sa Republic Act No. 10173 o ang Data Privacy Act of 2012, upang matiyak ang seguridad at integridad ng inyong datos.</string>
+    <string name="finalParagraph">%1$s%1$s%1$s%1$s%1$sSa pagpapatuloy, pinapatunayan ninyo na nauunawaan at sumasang-ayon kayo sa mga patakarang ito.</string>
+
+    <string name="yesOption" color="lightGrayishBlue">Yes</string>
+    <string name="noOption" color="red">No</string>
+
+</resources>

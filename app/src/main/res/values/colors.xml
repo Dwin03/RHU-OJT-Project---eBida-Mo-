@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="blue">#0000FF</color>
+    <color name="gray">#808080</color>
+    <color name="red">#FF0000</color>
+    <color name="green">#008000</color>
+    <color name="skyBlue">#87CEEB</color>
+    <color name="pink">#FFC0CB</color>
+    <color name="violet">#7F00FF</color>
+    <color name="orange">#FFA500</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="darkRed">#772114</color>
+    <color name="darkCyan">#008080</color>
+    <color name="cyan">#00FFFF</color>
+    <color name="verySoftOrange">#E6BC89</color>
+    <color name="maroon">#800000</color>
+    <color name="pureLimeGreen">#1BFF00</color>
+    <color name="offWhite">#F0F0F0</color>
+    <color name="veryLightGray">#D9D9D9</color>
+    <color name="strongLimeGreen">#00CC00</color>
+    <color name="veryDarkCyan">#13505D</color>
+    <color name="veryLightGrayMostlyWhite">#F5F5F5</color>
+    <color name="verySoftBlue">#C0E5F9</color>
+    <color name="vividBlue">#1B99DE</color>
+    
+    <color name="darkBlue">#0966AA</color>
+    <color name="lightGrayishBlue">#EFF2F3</color>
+    <color name="veryDarkBlue">#042C49</color>
+    <color name="darkerBlue">#064979</color>
+    <color name="newDarkerBlue">#012965</color>
+    
+    
+
+</resources>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".questionOneCheckBoxes">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/item1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hinahapo o hirap sa paghinga"
+                tools:layout_editor_absoluteX="3dp"
+                tools:layout_editor_absoluteY="3dp" />
+
+            <CheckBox
+                android:id="@+id/item2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kombulsyon"
+                tools:layout_editor_absoluteX="3dp"
+                tools:layout_editor_absoluteY="3dp" />
+
+            <CheckBox
+                android:id="@+id/item3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lagnat"
+                tools:layout_editor_absoluteX="3dp"
+                tools:layout_editor_absoluteY="3dp" />
+
+            <CheckBox
+                android:id="@+id/item4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Masakit ang lalamunan"
+                tools:layout_editor_absoluteX="3dp"
+                tools:layout_editor_absoluteY="3dp" />
+
+
+            <CheckBox
+                android:id="@+id/item5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Masakit ang ulo"
+                tools:layout_editor_absoluteX="3dp"
+                tools:layout_editor_absoluteY="3dp" />
+
+            <CheckBox
+                android:id="@+id/item6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nagsusuka"
+                tools:layout_editor_absoluteX="3dp"
+                tools:layout_editor_absoluteY="3dp" />
+
+
+            <CheckBox
+                android:id="@+id/item7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nagtatae"
+                tools:layout_editor_absoluteX="3dp"
+                tools:layout_editor_absoluteY="3dp" />
+
+            <CheckBox
+                android:id="@+id/item8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pananakit ng katawan"
+                tools:layout_editor_absoluteX="3dp"
+                tools:layout_editor_absoluteY="3dp" />
+
+            <CheckBox
+                android:id="@+id/item9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Panghihina ng kahit anong parte ng katawan"
+                tools:layout_editor_absoluteX="3dp"
+                tools:layout_editor_absoluteY="3dp" />
+
+            <CheckBox
+                android:id="@+id/item10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Paninigas ng katawan"
+                tools:layout_editor_absoluteX="3dp"
+                tools:layout_editor_absoluteY="3dp" />
+
+            <CheckBox
+                android:id="@+id/item11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rashes"
+                tools:layout_editor_absoluteX="3dp"
+                tools:layout_editor_absoluteY="3dp" />
+
+            <CheckBox
+                android:id="@+id/item12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sipon"
+                tools:layout_editor_absoluteX="3dp"
+                tools:layout_editor_absoluteY="3dp" />
+
+            <CheckBox
+                android:id="@+id/item13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ubo"
+                tools:layout_editor_absoluteX="3dp"
+                tools:layout_editor_absoluteY="3dp" />
+
+            <CheckBox
+                android:id="@+id/item14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ubo na mahigit dalawang linggo"
+                tools:layout_editor_absoluteX="3dp"
+                tools:layout_editor_absoluteY="3dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

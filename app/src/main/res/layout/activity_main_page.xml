@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="415dp"
+    android:layout_height="match_parent"
+    android:background="@color/lightGrayishBlue"
+    tools:context=".mainPage"
+    android:layout_gravity="center"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <ScrollView
+        android:id="@+id/questionScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foregroundGravity="center"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/wholePanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/logoHolder"
+                android:layout_width="match_parent"
+                android:layout_height="149dp"
+                android:background="@drawable/new_header" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="87dp"
+                        android:layout_height="wrap_content"
+                        android:text="Instruction: "
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/nimbus_san_regular"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:id="@+id/instructionTexts"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="viewStart"
+                        android:justificationMode="inter_word"
+                        android:fontFamily="@font/nimbus_san_regular"
+                        android:text="@string/instruction"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"/>
+
+                </LinearLayout>
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+                </RadioGroup>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="50dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/romanNum1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="I."
+                            android:textColor="@color/black"
+                            android:textSize="35sp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/romanus"/>
+
+                        <TextView
+                            android:id="@+id/questionOneLabel"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="Ano ang bida mo?"
+                            android:textColor="@color/black"
+                            android:textSize="30sp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/nimbus_san_regular"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="600dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingHorizontal="10dp" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginBottom="10dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/round_corners"
+                                android:padding="5dp"
+                                android:layout_marginBottom="2dp"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/item1DropDownRecyclerView"
+                                    android:layout_width="295dp"
+                                    android:layout_height="wrap_content"
+                                    android:padding="5dp"
+                                    android:textColor="@color/black"
+                                    android:fontFamily="@font/nimbus_san_regular"
+                                    android:text="Pasyente na may sakit / sintomas. (Piliin lahat ng naaangkop)" />
+
+                                <ImageButton
+                                    android:id="@+id/item1DropDown"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:background="@drawable/down"
+                                    android:layout_gravity="center"/>
+
+                                <!--                            <ImageButton-->
+                                <!--                                android:id="@+id/item1DropUp"-->
+                                <!--                                android:layout_width="48dp"-->
+                                <!--                                android:layout_height="48dp"-->
+                                <!--                                android:background="@drawable/upp" />-->
+
+                            </LinearLayout>
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/item1RecyclerViewHolder"
+                                android:layout_width="330dp"
+                                android:layout_height="wrap_content"
+                                android:background="@color/darkBlue"
+                                android:overScrollMode="never"
+                                android:visibility="gone"
+                                android:elevation="10dp"
+                                android:layout_gravity="center"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginBottom="10dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/round_corners"
+                                android:padding="5dp"
+                                android:layout_marginBottom="2dp"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/item2DropDownRecyclerView"
+                                    android:layout_width="295dp"
+                                    android:layout_height="wrap_content"
+                                    android:padding="5dp"
+                                    android:textColor="@color/black"
+                                    android:fontFamily="@font/nimbus_san_regular"
+                                    android:text="Bagong buntis / Buntis na walang check-up  / Bagong Panganak" />
+
+                                <ImageButton
+                                    android:id="@+id/item2DropDown"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:background="@drawable/down"
+                                    android:layout_gravity="center"/>
+
+                                <!--                            <ImageButton-->
+                                <!--                                android:id="@+id/item2DropUp"-->
+                                <!--                                android:layout_width="48dp"-->
+                                <!--                                android:layout_height="48dp"-->
+                                <!--                                android:background="@drawable/upp"-->
+                                <!--                                android:visibility="gone"/>-->
+
+                            </LinearLayout>
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/item2RecyclerViewHolder"
+                                android:layout_width="330dp"
+                                android:layout_height="wrap_content"
+                                android:background="@color/darkBlue"
+                                android:fontFamily="@font/nimbus_san_regular"
+                                android:overScrollMode="never"
+                                android:visibility="gone"
+                                android:layout_gravity="center" />
+
+
+                        </LinearLayout>
+
+                        <!--                        <LinearLayout-->
+                        <!--                            android:layout_width="match_parent"-->
+                        <!--                            android:layout_height="match_parent"-->
+                        <!--                            android:background="@drawable/round_corners"-->
+                        <!--                            android:padding="5dp"-->
+                        <!--                            android:layout_marginBottom="10dp"-->
+                        <!--                            android:orientation="horizontal">-->
+
+                        <!--                            <RadioButton-->
+                        <!--                                android:id="@+id/item3DropDownRecyclerView"-->
+                        <!--                                android:layout_width="295dp"-->
+                        <!--                                android:layout_height="wrap_content"-->
+                        <!--                                android:padding="5dp"-->
+                        <!--                                android:textColor="@color/black"-->
+                        <!--                                android:text="Bagong panganak" />-->
+
+                        <!--                            <ImageButton-->
+                        <!--                                android:id="@+id/item3DropDown"-->
+                        <!--                                android:layout_width="48dp"-->
+                        <!--                                android:layout_height="48dp"-->
+                        <!--                                android:background="@drawable/down" />-->
+
+                        <!--                                <androidx.recyclerview.widget.RecyclerView-->
+                        <!--                                    android:id="@+id/item3RecyclerViewHolder"-->
+                        <!--                                    android:layout_width="wrap_content"-->
+                        <!--                                    android:layout_height="wrap_content"-->
+                        <!--                                    android:overScrollMode="never"-->
+                        <!--                                    android:visibility="gone"/>-->
+                        <!--                        </LinearLayout>-->
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/round_corners"
+                            android:padding="5dp"
+                            android:layout_marginBottom="12dp"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/item4"
+                                android:layout_width="295dp"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/nimbus_san_regular"
+                                android:text="Bagong silang na sanggol" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/round_corners"
+                            android:padding="5dp"
+                            android:layout_marginBottom="12dp"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/item5"
+                                android:layout_width="295dp"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/nimbus_san_regular"
+                                android:text="Highblood o Diabetic (Wala pang gamot o Tumigil sa gamutan)" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/round_corners"
+                            android:padding="5dp"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/item6"
+                                android:layout_width="295dp"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/nimbus_san_regular"
+                                android:text="Usaping pang-sanidad / Walang permit na establisyemento" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/round_corners"
+                            android:padding="5dp"
+                            android:layout_marginBottom="12dp"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/item7"
+                                android:layout_width="295dp"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/nimbus_san_regular"
+                                android:text="Walang ginagamit o gustong gumamit ng Family Planning" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/round_corners"
+                            android:padding="5dp"
+                            android:layout_marginBottom="12dp"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/item8"
+                                android:layout_width="295dp"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/nimbus_san_regular"
+                                android:text="Wala pang bakuna / Reaksyon sa bakuna" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/clearSelecton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Burahin ang Napili"
+                    android:textColor="@color/darkBlue"
+                    android:fontFamily="@font/nimbus_san_bold"
+                    android:layout_gravity="end"
+                    android:textSize="18sp"
+                    android:layout_marginHorizontal="10dp"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/nextPageBtn"
+                android:layout_width="119dp"
+                android:layout_height="38dp"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/darkBlue"
+                android:fontFamily="@font/nimbus_san_regular"
+                android:layout_marginBottom="10dp"
+                android:text="Kasunod"
+                android:textColor="@color/white"
+                tools:layout_editor_absoluteX="159dp"
+                tools:layout_editor_absoluteY="677dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
