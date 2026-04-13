@@ -265,20 +265,20 @@ class personalDetails : AppCompatActivity() {
 
     private fun sendDataToGoogleForm() {
         // Google Form response submission URL
-        val formUrl = "https://docs.google.com/forms/d/e/1FAIpQLSd2Y4-5KmojEHaeOLPOU2o5jlRHnohp8DH1qCXbrX-3NCsZiw/formResponse"
+        val formUrl = "https://docs.google.com/forms/d/e/1FAIpQLSdWr7NKhwIx5G_xwCN_wvk9B8rHVOno_YmcSILyie26WnAE-Q/formResponse"
 
         val selectedData = intent.getStringExtra("selectedData") ?: ""
 
         val formData = mapOf(
-            "entry.1653580485" to editTextPatientName.text.toString(),
-            "entry.1221070412" to editTextPatientAge.text.toString(),
-            "entry.920931514" to editTextPatientSex.text.toString(),
-            "entry.1598385483" to editTextPatientAddress.text.toString(),
-            "entry.733025084" to editTextPatientNum.text.toString(),
-            "entry.1444684359" to selectedData,
-            "entry.133333115" to editTextInfoName.text.toString(),
-            "entry.1481207952" to editTextInfoAddress.text.toString(),
-            "entry.73766885" to editTextInfoNum.text.toString()
+            "entry.1630963027" to editTextPatientName.text.toString(),
+            "entry.730703705" to editTextPatientAge.text.toString(),
+            "entry.1630219846" to editTextPatientSex.text.toString(),
+            "entry.1484214197" to editTextPatientAddress.text.toString(),
+            "entry.740304159" to editTextPatientNum.text.toString(),
+            "entry.1990074277" to selectedData,
+            "entry.1148467621" to editTextInfoName.text.toString(),
+            "entry.565508550" to editTextInfoAddress.text.toString(),
+            "entry.1960890905" to editTextInfoNum.text.toString()
         )
 
         // Build the request body
